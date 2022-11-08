@@ -144,8 +144,6 @@ Post
 }
 .post_form {
     padding: 20px 40px;
-    border-bottom: 1px solid rgba(18, 144, 202);
-    border-top: 1px solid rgba(204, 204, 204, 0.5);
     color: #9c5b5b;
     width: 100%;
 }
