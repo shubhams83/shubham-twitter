@@ -19,3 +19,6 @@ class Post(models.Model):
     )
     image= CloudinaryField('image', blank=True, db_index=True
     )
+
+    def __str__(self):
+        return self.name
