@@ -35,6 +35,10 @@ X_FRAME_OPTIONS = '*'
 CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
 
+X_FRAME_OPTIONS = '*'
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -83,24 +87,24 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd9a3u76jhl6t35',
-        'USER': 'vxeljxjyrzwtwc',
-        'HOST': 'ec2-23-20-224-166.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'PASSWORD': '4ad45979b9e743f566c90b2ffb886ef83e3014691e091ca2cd674e52eb64bd09',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd9a3u76jhl6t35',
+#         'USER': 'vxeljxjyrzwtwc',
+#         'HOST': 'ec2-23-20-224-166.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'PASSWORD': '4ad45979b9e743f566c90b2ffb886ef83e3014691e091ca2cd674e52eb64bd09',
+#     }
+# }
 
 
 # Password validation
